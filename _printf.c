@@ -14,7 +14,7 @@ int i;
 int flag = 0;
 if (format == NULL)
 return (0);
-var_start(args, format);
+va_start(args, format);
 for (i = 0; *(format + i) != '\0'; i++)
 {
 if (format[i] == '%')
@@ -46,9 +46,9 @@ count += 2;
 else
 {
 _putchar(format[i]);
-count += `;
+count += 1;
 }
 }
-var_end(args);
-return(count);
+va_end(args);
+return (count);
 }
