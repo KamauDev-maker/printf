@@ -1,0 +1,33 @@
+man_3_printf
+
+_print - manaul page
+
+Name:
+    _printf - Produce output according to a format.
+
+Synopsis:
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <stdarg.h>
+
+    int _printf(const char *format, ...);
+
+Descriptions;
+    The function produces a output according to a format specifiers. Format controls the output just like in the print from the standard library
+        -%c character
+        -%s string 
+        -% percent 
+        -%d decimal (base 10) integer 
+        -i integer in base 10
+
+Return Value:
+    On success, this function returns the number of characters printed (excluding the null byte used at the end of a string)
+Format:
+    Each conversion specifier is introduced by the % character and ends with a conversion specifier.
+
+Usage:
+    To print character 't', string "falcon heavy" and length 20;
+    _printf("%c %s %d %i", 't', "falcon heavy", 20, 20);
+
+Authors:
+        Francis Kamara & Oscar Kamau
