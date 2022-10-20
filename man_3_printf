@@ -16,7 +16,7 @@ Descriptions;
     The function produces a output according to a format specifiers. Format controls the output just like in the print from the standard library
         -%c character
         -%s string 
-        -% percent 
+        -%% percent % 
         -%d decimal (base 10) integer 
         -i integer in base 10
 
