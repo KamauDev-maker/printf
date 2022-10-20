@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-*to_binary -  convert usigned int to binary
+*to_Binary -  convert usigned int to binary
 *@n: number passed for convertion
 *Return: number of base 2 characters
 */
-int to_binary(unsigned int n)
+int to_Binary(unsigned int n)
 {
 int binary[sizeof(unsigned int) * 8],
 modula, x, char_len = 0;

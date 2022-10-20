@@ -44,7 +44,7 @@ case 'i':
 count += _print_int((long)(va_arg(args, int)));
 break;
 case 'b':
-count += to_binary(va_arg(args, int));
+count += to_Binary(va_arg(args, int));
 break;
 case 'u':
 count += _print_int(va_arg(args, unsigned int));
