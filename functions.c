@@ -1,4 +1,33 @@
 #include "main.h"
+
+/**
+ * print_char - Print characters (%c)
+ * @arg_list: Stores a list of characters
+ *
+ * Return: num of characters printed
+ */
+int print_char(va_list arg_list)
+{
+	char c = va_arg(arg_list, int);
+
+	return (_putchar(c));
+}
+
+/**
+ * print_percent - function to print %
+ * @arguments: unused
+ *
+ * Return: always 1
+ */
+
+int print_percent(__attribute__((unused))va_list arguments)
+{
+	char c = '%';
+
+	_putchar(c);
+	return (1);
+}
+
 /**
  * _print_str - prints a string
  * @string: string to be printed

@@ -27,5 +27,7 @@ int main(void)
     printf("Unsigned octal:[%o]\n", ui);
     _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
     printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+    len = _printf("Percent:[%%]\n");
+    len2 = printf("Percent:[%%]\n");
     return (0);
 }
